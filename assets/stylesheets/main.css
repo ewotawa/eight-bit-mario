@@ -1,0 +1,82 @@
+.box {
+    width: 19px;
+    height: 19px;
+    border-style: outset;	
+}
+
+.red {
+    background-color: darkred;
+    border-color: darkred;
+	  animation-name: redStar;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: reverse;
+}
+
+.orange {
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+.brown {
+    background-color: brown;
+    border-color: brown;
+	  animation-name: brownStar;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: reverse;
+}
+
+.gray {
+    background-color: gray;
+    border-color: gray;
+}
+
+body {
+	padding: 20px;
+	background-color: black;
+	color: white;
+	font-family: 'Special Elite', cursive;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+}
+
+@keyframes redStar {
+    0%   { background-color: darkred;
+					 border-color:     darkred; }
+    33%  { background-color: beige;
+					border-color:      beige; }
+		66%	 { background-color: darkgreen;
+					border-color:      darkgreen; }
+		100% { background-color: beige;
+					 border-color:     beige; }
+}
+
+@keyframes brownStar {
+    0%   { background-color: brown;
+					 border-color:     brown; }
+    33%  { background-color: darkgreen;
+					 border-color:     darkgreen; }
+		66%  { background-color: darkred;
+					 border-color: 		 darkred; }
+		100% { background-color: brown;
+					 border-color:		 brown;}
+		
+}
+
+  @media only screen and (max-width: 600px) {
+       .box { width:  10px;
+							height: 10px; }
+			 .center { width: 90%; }
+			 .gray { background-color: darkblue;
+    					 border-color:     darkblue; }
+     }
