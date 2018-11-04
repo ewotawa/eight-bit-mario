@@ -4,6 +4,10 @@
     border-style: outset;	
 }
 
+.text-center {
+	text-align: center;
+}
+
 .red {
     background-color: darkred;
     border-color: darkred;
